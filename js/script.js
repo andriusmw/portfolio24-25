@@ -1,3 +1,17 @@
+/*=========================== TOGGLE ICON NAVBAR ============================*/
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+
+
+};
+
+
+
 /*===========================SCROLL SECTIONS ACTIVE LINK ========================*/
 
 let sections = document.querySelectorAll('section');
@@ -27,6 +41,20 @@ window.onscroll = () => {
     let  header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.screenY > 100);
+
+    /*============== REMOVE TOGGLE & NAVBAR WHEN CLICKING NAVBAR LINK ====================*/
+    /* ====================================================================================*/
+
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+
+
+
+
+
+
+
+
 
 
 }
