@@ -201,8 +201,8 @@ span {
     margin: 2rem 0 3rem;
 }
 
-/* ------------------PORTFOLIO --------------------*/
-
+/* ------------------PORTFOLIO ---------------------------------------*/
+/*----------------------------------------------------------------------*/
 .portfolio {
     background: var(--second-bg-color);
 }
@@ -227,7 +227,7 @@ span {
 }
 
 .portfolio-box img {
-    width: 100%;
+    width: 120%;
     transition: .5s ease;
 }
 
