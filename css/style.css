@@ -227,7 +227,7 @@ span {
 }
 
 .portfolio-box img {
-    width: 120%;
+    width: 100%;
     transition: .5s ease;
 }
 
@@ -259,11 +259,13 @@ span {
 
 .portfolio-layer h4 {
     font-size: 3rem;
+    text-shadow: 1px 1px 0 #1f242d, -1px 1px 0 #1f242d, 1px -1px 0 #1f242d, -1px -1px 0 #1f242d;
 }
 
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    text-shadow: 1px 1px 0 #1f242d, -1px 1px 0 #1f242d, 1px -1px 0 #1f242d, -1px -1px 0 #1f242d;
 }
 
 .portfolio-layer a {
