@@ -317,7 +317,28 @@ span {
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
 }
+
+.skills-box .skills-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.skills-box .skills-content:hover::before {
+    width: 100%;
+
+}
+
 
 .skills-content .progress {
     padding: 1rem 0;
@@ -533,8 +554,14 @@ span {
     gap: 5rem;
 }
 
+.education-column1, .education-column2 {
+       /*change it at responsive to 100% */
+       max-width: 50%;
+}
+
 .education-row  .education-column1 {
     flex: 1 1 40rem;
+ 
 }
 
 .education-column1 .title, .education-column2 .title {
@@ -607,52 +634,6 @@ span {
     font-size: 1.6rem;
     padding-top: .5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -776,6 +757,13 @@ span {
 }
 
 @media (max-width: 768px) {
+
+    .education-column1, .education-column2 {
+        /*change it at responsive to 100% */
+        max-width: 100%;
+     }
+
+
     #menu-icon {
         display: block;
     }
@@ -846,12 +834,25 @@ span {
 
 
 @media (max-width: 617px) {
+
+    .education-column1, .education-column2 {
+        /*change it at responsive to 100% */
+        max-width: 100%;
+    }
+
+
     .portfolio-container {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 450px) {
+
+    .education-column1, .education-column2 {
+        /*change it at responsive to 100% */
+        max-width: 100%;
+     }
+
     html {
         font-size: 50%;
     }
@@ -863,6 +864,12 @@ span {
 }
 
 @media (max-width: 365px) {
+
+    .education-column1, .education-column2 {
+        /*change it at responsive to 100% */
+        max-width: 100%;
+     }
+
     .home-img img {
         width: 90vw;
     }
