@@ -481,7 +481,7 @@ span {
     position: relative;
     padding: 1.5rem;
     border: .2rem solid var(--main-color);
-    border-radius: 6rem;
+    border-radius: .9rem;
     margin-bottom: 2rem;
     overflow: hidden;
 }
@@ -503,7 +503,7 @@ span {
 }
 
 .experience-content .content .year {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
     color: var(--main-color);
     padding-bottom: .5rem;
 }
@@ -595,7 +595,7 @@ span {
     position: relative;
     padding: 1.5rem;
     border: .2rem solid var(--main-color);
-    border-radius: 6rem;
+    border-radius: .6rem;
     margin-bottom: 2rem;
     overflow: hidden;
 }
@@ -617,13 +617,14 @@ span {
 }
 
 .education-content .content .year {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
     color: var(--main-color);
     padding-bottom: .5rem;
 }
 
 .education-content .content .year i {
     padding-right: .5rem;
+    
 }
 
 .education-content .content h3 {
