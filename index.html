@@ -14,13 +14,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
+
 <body>
+
+       <!-- Background Music -->
+   <audio id="background-music" autoplay loop>
+    <source src="audio/coffeeJazz.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+
 
     <!--header design-->
     <header class="header">
         <a href="" class="logo"></a> 
+        <button id="sound-toggle" onclick="toggleSound()">🔊</button>
 
         <i class='bx bx-menu' id="menu-icon"></i>
+
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -694,6 +706,41 @@
         <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
  </footer>
+
+ <!-- JavaScript for toggling sound -->
+ <script>
+    // Attempt to autoplay when the page loads
+    window.addEventListener("load", () => {
+        const music = document.getElementById("background-music");
+        const soundToggle = document.getElementById("sound-toggle");
+
+         // Adjust the volume to 30%
+         music.volume = 0.3;
+
+        // Attempt to play music if allowed
+        if (music.paused) {
+            music.play().catch(() => {
+                // If autoplay is blocked, display the muted icon
+                soundToggle.textContent = "🔇";
+            });
+        }
+    });
+
+    function toggleSound() {
+        const music = document.getElementById("background-music");
+        const soundToggle = document.getElementById("sound-toggle");
+        
+        if (music.paused) {
+            music.play();
+            soundToggle.textContent = "🔊"; // Sound on icon
+        } else {
+            music.pause();
+            soundToggle.textContent = "🔇" ; // Sound off icon
+        }
+    }
+</script>
+
+
 
  <!-- scroll reveal -->
 

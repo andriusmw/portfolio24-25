@@ -80,6 +80,23 @@ section {
     display: none;
 }
 
+
+/* Eliminate background on volumen buttons */
+#sound-toggle {
+    font-size: 3rem;
+    background: transparent; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+}
+
+
+#sound-toggle i {
+    background: none; 
+    border: none; 
+    color: inherit; 
+}
+
 /*----------------------------------HOME PAGE ------------------------------*/
 
 .home {
