@@ -956,6 +956,7 @@ span {
 
     .home-img img {
         width: 90vw;
+        margin-left: 0vw;
     }
 
     .about-img img {
