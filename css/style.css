@@ -696,6 +696,13 @@ span {
     max-width: 100%;      /* Las imágenes ocuparán el ancho total del contenedor */
     margin-bottom: 20px;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Add 3D effect on hover */
+.recomendations-img img:hover {
+    transform: perspective(1000px) rotateY(10deg) rotateX(5deg); /* Efecto 3D con ligera rotación */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra para el efecto 3D */
 }
 
 /* Responsive adjustments for larger screens */
@@ -719,6 +726,7 @@ span {
         max-width: 70%; /* Ajuste del tamaño para pantallas muy grandes */
     }
 }
+
 
 
 /* --------------------- CONTACT -------------------------*/
