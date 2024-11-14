@@ -668,11 +668,57 @@ span {
 
 
 
+/*-------------------- RECOMENDATIONS --------------------*/
+/*--------------------------------------------------------*/
+
+/* General styles */
+.recomendations {
+    text-align: center;
+    padding: 20px;
+}
 
 
 
+/* Center the recomendations-img container and make it responsive */
+.recomendations-img {
+    display: flex;
+    flex-direction: column; /* Imágenes en columna */
+    align-items: center;    /* Centrar las imágenes dentro del contenedor */
+    margin: 0 auto;         /* Centrar el contenedor en la pantalla */
+    max-width: 500px;       /* Ancho máximo para pantallas más pequeñas */
+    padding: 10px;
+}
 
+/* Make images responsive */
+.recomendations-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;      /* Las imágenes ocuparán el ancho total del contenedor */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
 
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+    .recomendations-img {
+        align-items: center; /* Centrar las imágenes en pantallas más grandes */
+        max-width: 700px;    /* Aumentamos el ancho máximo para pantallas medianas */
+    }
+
+    .recomendations-img img {
+        max-width: 80%; /* Las imágenes pueden crecer hasta el 80% del contenedor en pantallas medianas */
+    }
+}
+
+@media (min-width: 1200px) {
+    .recomendations-img {
+        max-width: 900px; /* Más espacio para pantallas muy grandes */
+    }
+    
+    .recomendations-img img {
+        max-width: 70%; /* Ajuste del tamaño para pantallas muy grandes */
+    }
+}
 
 
 /* --------------------- CONTACT -------------------------*/
