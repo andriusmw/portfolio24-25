@@ -5,40 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Portfolio</title>
+    
+    <!-- SEO Title -->
+    <title>Andrew Portfolio | Full-Stack Web Developer</title>
+    
+    <!-- SEO Meta Descriptions -->
+    <meta name="description" content="Andrew's professional portfolio - a Full-Stack Web Developer with expertise in multiple programming languages and a passion for creating dynamic web applications.">
+    <meta name="keywords" content="Andrew, Full-Stack Developer, Web Developer Portfolio, HTML, CSS, JavaScript, Programming, LinkedIn, GitHub">
+    
+    <!-- Open Graph for Social Media Sharing -->
+    <meta property="og:title" content="Andrew Portfolio | Full-Stack Web Developer">
+    <meta property="og:description" content="Explore Andrew's portfolio, showcasing projects, skills, and experience as a Full-Stack Web Developer.">
+    <meta property="og:image" content="images/andrew.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card for Social Media Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Andrew Portfolio | Full-Stack Web Developer">
+    <meta name="twitter:description" content="Explore Andrew's portfolio, showcasing projects, skills, and experience as a Full-Stack Web Developer.">
+    <meta name="twitter:image" content="images/andrew.png">
+    
+    <!-- Schema.org Markup for Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Andrew",
+      "jobTitle": "Full-Stack Web Developer",
+      "url": "https://andrewdeveloper.net",
+      "sameAs": [
+        "https://www.linkedin.com/in/andresgl94/",
+        "https://github.com/andriusmw"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Self-Employed"
+      },
+      "image": "https://yourwebsite.com/images/andrew.png",
+      "description": "Experienced Full-Stack Web Developer specializing in web applications."
+    }
+    </script>
 
-    <!--box icons-->
+    <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--custom css-->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-
-
 <body>
 
-       <!-- Background Music -->
-   <audio id="background-music" autoplay loop>
-    <source src="audio/coffeeJazz.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+    <!-- Background Music -->
+    <audio id="background-music" autoplay loop>
+        <source src="audio/coffeeJazz.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
 
-    
-    
-
-
-    <!--header design-->
+    <!-- Header Design -->
     <header class="header">
-        <a href="" class="logo"></a> 
-      
-    
+        <a href="index.html" class="logo" title="Andrew's Logo"></a>
         <a href="index.html" class="language">English</a>
-        <a href="index_es.html" class="language">Español</a>  
+        <a href="index_es.html" class="language">Español</a>
         <button id="sound-toggle" onclick="toggleSound()">🔊</button>
-
         <i class='bx bx-menu' id="menu-icon"></i>
-
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -47,35 +77,29 @@
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
-            <a href="#recomendations">Recomendations</a>
+            <a href="#recommendations">Recommendations</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- --------------------Home section design --------------------------------->
-    <!-- ------------------------------------------------------------------------->
-
-
+    <!-- Home Section Design -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
+            <h3>Welcome! I'm</h3>
             <h1>Andrew</h1>
-            <h3>And I'm a  <span class="multiple-text"></span></h3>
-            <p>I am a Full-Stack Web Developer with 2 years of working experience 
-                and i know several programming languages.  Keep reading to know more about me!
-            </p>
+            <h3>Your <span class="multiple-text">Full-Stack Web Developer</span></h3>
+            <p>I am a Full-Stack Web Developer with 2 years of professional experience in building dynamic, responsive web applications. Explore my portfolio to see my projects and skills in action!</p>
+            
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/andresgl94/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="https://github.com/andriusmw" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/andresgl94/" target="_blank" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/andriusmw" target="_blank" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
             </div>
             
             <a href="pdf/ANDREW-FULL-STACK-WEB-DEVELOPER-ENG-2024-25.pdf" download="Curriculum_Andrew" class="btn">Download CV</a>
-
         </div>
 
-
         <div class="home-img">
-            <img id="home-img" src="images/andrew.png" alt="andrew-photo">
+            <img id="home-img" src="images/andrew.png" alt="Portrait of Andrew, Full-Stack Web Developer">
         </div>
     </section>
 
